@@ -1,0 +1,13 @@
+INDEX VERSION 1.4+D:\RKBackup\WEJA1\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+996007587.index
+661600371.index
+71423995.index
+3239683873.index
+485642199.index
+1097011129.index
+2922684622.index
+4005953615.index
+3887401592.index
+1253806742.index
+2548219526.index
+1621817932.index

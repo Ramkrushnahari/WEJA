@@ -1,0 +1,6 @@
+package com.jspider.springboot.pojo;
+
+public class EmployeePOJO {
+	
+
+}

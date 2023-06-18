@@ -1,0 +1,8 @@
+package com.jspider.springboot.service;
+
+import org.springframework.stereotype.Service;
+
+@Servicer
+public class EmployeeService {
+
+}

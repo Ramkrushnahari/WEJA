@@ -1,0 +1,26 @@
+package com.jspider.springboot.service;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jspider.springboot.pojo.EmployeePOJO;
+import com.jspider.springboot.repository.EmployeeRepository;
+
+@Service
+public class EmployeeService {
+	
+	@Autowired
+	private EmployeeRepository repository;
+
+	public EmployeePOJO addEmployee(EmployeePOJO employee) {
+		EmployeePOJO pojo = repository.save(employee);
+		return pojo;
+	}
+
+	public EmployeePOJO searchEmployee(int id) {
+		EmployeePOJO pojo = repository.findById(id).orElse(null);
+		return pojo;
+	}
+
+}

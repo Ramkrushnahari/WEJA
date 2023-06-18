@@ -1,0 +1,8 @@
+package com.jspider.springboot.pojo;
+
+import jakarta.persistence.Id;
+
+public class EmployeePOJO {
+	
+	@Id
+}

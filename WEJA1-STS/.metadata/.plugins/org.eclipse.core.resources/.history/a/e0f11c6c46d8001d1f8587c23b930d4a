@@ -1,0 +1,13 @@
+package com.jspider.springboot.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@json
+public class EmployeeResponse {
+
+}

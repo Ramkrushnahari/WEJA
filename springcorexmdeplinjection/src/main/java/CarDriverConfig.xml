@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean
+		class="com.jspider.springcorexmdeplinjection.oto.bean.CarBean"
+		name="car">
+		<property name="id">
+			<value>1</value>
+		</property>
+		<property name="brand" value="TATA" />
+		<property name="model" value="NANO" />
+		<property name="regno" value="MH45RK4545" />
+		<property name="driver" ref="driver1" />
+	</bean>
+	<bean
+		class="com.jspider.springcorexmdeplinjection.oto.bean.DriverBean"
+		name="driver1">
+		<property name="id">
+			<value>1</value>
+		</property>
+		<property name="name" value="Danny" />
+		<property name="contact" value="9874563210" />
+
+	</bean>     
+	
+	<!-- Bydirection ONE TO ONE -->
+
+	<bean
+		class="com.jspider.springcorexmdeplinjection.bydir.oto.bean.DriverBean"
+		name="driver">
+		<property name="id">
+			<value>1</value>
+		</property>
+		<property name="name" value="Danny" />
+		<property name="contact" value="9874563210" />
+		<property name="car" ref="car1" />
+	</bean>
+
+	<bean
+		class="com.jspider.springcorexmdeplinjection.bydir.oto.bean.CarBean"
+		name="car1">
+		<property name="id">
+			<value>1</value>
+		</property>
+		<property name="brand" value="TATA" />
+		<property name="model" value="NANO" />
+		<property name="regno" value="MH45RK4545" />
+
+	</bean> 
+
+</beans>
